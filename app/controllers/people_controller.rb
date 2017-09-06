@@ -19,7 +19,7 @@ class PeopleController < ApplicationController
         if person.save
             render json: {
                 status: 200,
-                message: 'Succesfully created Person.'
+                message: 'Succesfully created person.'
             }
         else
             render json: {
@@ -34,7 +34,7 @@ class PeopleController < ApplicationController
         if person.update(person_params)
             render json: {
                 status: 200,
-                message: 'Succesfully updated Person.'
+                message: 'Succesfully updated person.'
             }
         else
             render json: {
@@ -49,7 +49,7 @@ class PeopleController < ApplicationController
         if person.destroy
             render json: {
                 status: 200,
-                message: 'Succesfully destroyed Person.'
+                message: 'Succesfully destroyed person.'
             }
         else
             render json: {
